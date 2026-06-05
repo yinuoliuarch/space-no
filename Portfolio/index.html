@@ -1,236 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Yinuo Liu</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: Helvetica, Arial, sans-serif;
-    color:#111;
-    background:white;
-    padding:60px;
-    line-height:1.5;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-}
-
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    margin-bottom:80px;
-}
-
-.name{
-    font-size:64px;
-    font-weight:300;
-    letter-spacing:2px;
-}
-
-.contact{
-    text-align:right;
-    font-size:14px;
-}
-
-.section{
-    border-top:1px solid #000;
-    padding-top:20px;
-    margin-top:40px;
-}
-
-.section-title{
-    font-size:12px;
-    letter-spacing:3px;
-    margin-bottom:20px;
-}
-
-.entry{
-    display:grid;
-    grid-template-columns:200px 1fr;
-    margin-bottom:28px;
-}
-
-.date{
-    font-size:13px;
-    color:#666;
-}
-
-.content h3{
-    font-size:18px;
-    font-weight:500;
-}
-
-.content p{
-    font-size:14px;
-}
-
-.skills{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:10px;
-    font-size:14px;
-}
-
-ul{
-    list-style:none;
-}
-
-li{
-    margin-bottom:5px;
-}
-
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfolio website for Yino Liu, a designer moving from architecture into computational and interactive design."
+  />
+  <title>Yino Liu | Computational + Interactive Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <a class="skip-link" href="#project-index">Skip to projects</a>
 
-<div class="container">
+  <main>
+    <section class="intro section-reveal" aria-labelledby="intro-title">
+      <div class="intro__content">
+        <p class="eyebrow">Portfolio / computational + interactive design</p>
+        <h1 id="intro-title">Yino Liu</h1>
+        <p class="bio">
+          Designer transitioning from architecture into computational and interactive design, working across spatial systems, interfaces, visual tools, and code-driven experiments.
+        </p>
+      </div>
 
-<div class="header">
+      <nav class="social-links" aria-label="Professional links">
+        <!-- Replace the href values below with your real links. -->
+        <a href="cv.pdf" aria-label="Open Yino Liu CV">CV</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:hello@example.com">Email</a>
+      </nav>
+    </section>
 
-<div>
-    <h1 class="name">YINUO LIU</h1>
-</div>
+    <section class="project-index section-reveal" id="project-index" aria-labelledby="project-index-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="project-index-title">Project Index</h2>
+      </div>
 
-<div class="contact">
-    yinuo.liu.work@gmail.com<br>
-    (646) 393-7696<br>
-    New York, NY
-</div>
+      <ol class="projects" aria-label="Selected projects">
+        <!--
+          Each project row is a clickable link.
+          To add your real project later, edit:
+          1. href="project-name.html" for the page link
+          2. The number, title, description, and year
+          3. The thumbnail image path in CSS or replace the gradient block with an <img>
+        -->
+        <li class="project-item section-reveal">
+          <a class="project-card" href="projects/spatial-interface-study.html">
+            <span class="project-card__number">01</span>
+            <span class="project-card__thumbnail thumbnail-one" aria-hidden="true"></span>
+            <span class="project-card__text">
+              <span class="project-card__title">Spatial Interface Study</span>
+              <span class="project-card__description">A prototype exploring how architectural logic can structure interactive screen-based navigation.</span>
+            </span>
+            <span class="project-card__year">2026</span>
+          </a>
+        </li>
 
-</div>
+        <li class="project-item section-reveal">
+          <a class="project-card" href="projects/procedural-archive.html">
+            <span class="project-card__number">02</span>
+            <span class="project-card__thumbnail thumbnail-two" aria-hidden="true"></span>
+            <span class="project-card__text">
+              <span class="project-card__title">Procedural Archive</span>
+              <span class="project-card__description">A code-generated visual archive that translates research fragments into dynamic compositional systems.</span>
+            </span>
+            <span class="project-card__year">2025</span>
+          </a>
+        </li>
 
-<div class="section">
+        <li class="project-item section-reveal">
+          <a class="project-card" href="projects/sensorial-map.html">
+            <span class="project-card__number">03</span>
+            <span class="project-card__thumbnail thumbnail-three" aria-hidden="true"></span>
+            <span class="project-card__text">
+              <span class="project-card__title">Sensorial Map</span>
+              <span class="project-card__description">An interactive mapping experiment connecting urban movement, environmental data, and embodied perception.</span>
+            </span>
+            <span class="project-card__year">2025</span>
+          </a>
+        </li>
+      </ol>
+    </section>
+  </main>
 
-<div class="section-title">EDUCATION</div>
-
-<div class="entry">
-    <div class="date">2020–2025</div>
-
-    <div class="content">
-        <h3>Cooper Union</h3>
-        <p>Bachelor of Architecture</p>
-    </div>
-</div>
-
-</div>
-
-<div class="section">
-
-<div class="section-title">EXPERIENCE</div>
-
-<div class="entry">
-    <div class="date">
-        Jul 2025 – Nov 2025
-    </div>
-
-    <div class="content">
-        <h3>Alexander Gorlin Architects</h3>
-        <p>Drafter / Model Builder</p>
-    </div>
-</div>
-
-<div class="entry">
-    <div class="date">
-        Jun 2024 – Aug 2024
-    </div>
-
-    <div class="content">
-        <h3>Cooper Union</h3>
-        <p>Project Assistant</p>
-    </div>
-</div>
-
-<div class="entry">
-    <div class="date">
-        Fall 2023
-    </div>
-
-    <div class="content">
-        <h3>Bone / Levine Architects</h3>
-        <p>Intern</p>
-    </div>
-</div>
-
-<div class="entry">
-    <div class="date">
-        Jun 2023 – Aug 2023
-    </div>
-
-    <div class="content">
-        <h3>Capol Hua Yang International & Associates</h3>
-        <p>Intern</p>
-    </div>
-</div>
-
-</div>
-
-<div class="section">
-
-<div class="section-title">SKILLS</div>
-
-<div class="skills">
-
-<div>
-<ul>
-<li>AutoCAD</li>
-<li>Rhinoceros</li>
-<li>Revit</li>
-<li>SketchUp</li>
-</ul>
-</div>
-
-<div>
-<ul>
-<li>Grasshopper</li>
-<li>Photoshop</li>
-<li>Illustrator</li>
-<li>InDesign</li>
-</ul>
-</div>
-
-<div>
-<ul>
-<li>Enscape</li>
-<li>Blender</li>
-<li>Photography</li>
-</ul>
-</div>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<div class="section-title">COURSES</div>
-
-<p>
-Physical Model Making /
-Building Structures & Technologies /
-Construction Management /
-Environmental Design /
-Landscape and Urban Planning /
-History of Architecture
-</p>
-
-</div>
-
-</div>
-
+  <script src="script.js"></script>
 </body>
 </html>
