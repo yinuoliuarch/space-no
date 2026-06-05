@@ -1,8 +1,1 @@
-const button =
-document.querySelector(".search-button");
-
-button.addEventListener("click", () => {
-
-    alert("Search button works!");
-
-});
+console.log("this works");
