@@ -8,90 +8,122 @@
     content="Portfolio website for Yino Liu, a designer moving from architecture into computational and interactive design."
   />
   <title>Yino Liu | Computational + Interactive Design</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-<link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#project-index">Skip to projects</a>
+  <a class="skip-link" href="#work">Skip to work</a>
 
   <main>
     <section class="intro section-reveal" aria-labelledby="intro-title">
-      <div class="intro__content">
-        <p class="eyebrow">Portfolio / computational + interactive design</p>
+      <div class="intro-panel" data-fade-on-scroll>
+        <!-- EDIT NAME HERE -->
         <h1 id="intro-title">Yino Liu</h1>
-        <p class="bio">
-          Designer transitioning from architecture into computational and interactive design, working across spatial systems, interfaces, visual tools, and code-driven experiments.
-        </p>
-      </div>
 
-      <nav class="social-links" aria-label="Professional links">
-        <!-- Replace the href values below with your real links. -->
-        <a href="cv.pdf" aria-label="Open Yino Liu CV">CV</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="mailto:hello@example.com">Email</a>
-      </nav>
+        <nav class="social-links" aria-label="Professional links">
+          <!-- EDIT LINKS HERE: replace href values with your real CV, LinkedIn, GitHub, and email. -->
+          <a href="cv.pdf" aria-label="Open Yino Liu CV">CV</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:yinuo.liu.work@gmail.com">Email</a>
+        </nav>
+      </div>
     </section>
 
-    <section class="project-index section-reveal" id="project-index" aria-labelledby="project-index-title">
-      <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h2 id="project-index-title">Project Index</h2>
+    <section class="work section-reveal" id="work" aria-label="Selected work">
+      <div class="filter-bar" aria-label="Filter projects by category">
+        <button class="filter-button is-active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="design">Design</button>
+        <button class="filter-button" type="button" data-filter="research">Research</button>
+        <button class="filter-button" type="button" data-filter="art">Art</button>
       </div>
 
-      <ol class="projects" aria-label="Selected projects">
-        <!--
-          Each project row is a clickable link.
-          To add your real project later, edit:
-          1. href="project-name.html" for the page link
-          2. The number, title, description, and year
-          3. The thumbnail image path in CSS or replace the gradient block with an <img>
-        -->
-        <li class="project-item section-reveal">
-          <a class="project-card" href="projects/spatial-interface-study.html">
-            <span class="project-card__number">01</span>
-            <span class="project-card__thumbnail thumbnail-one" aria-hidden="true"></span>
-            <span class="project-card__text">
-              <span class="project-card__title">Spatial Interface Study</span>
-              <span class="project-card__description">A prototype exploring how architectural logic can structure interactive screen-based navigation.</span>
-            </span>
-            <span class="project-card__year">2026</span>
+      <div class="work-grid">
+        <!-- EDIT PROJECTS HERE: change the href, data-category, title, and subtitle for each project. -->
+        <article class="work-item section-reveal" data-category="design">
+          <a class="thumbnail-link" href="projects/spatial-interface-study.html" aria-label="Open Spatial Interface Study project">
+            <span class="thumbnail thumbnail-one" aria-hidden="true"></span>
           </a>
-        </li>
+          <h2>Spatial Interface Study</h2>
+          <p class="subtitle">Architectural logic translated into an interactive navigation prototype.</p>
+        </article>
 
-        <li class="project-item section-reveal">
-          <a class="project-card" href="projects/procedural-archive.html">
-            <span class="project-card__number">02</span>
-            <span class="project-card__thumbnail thumbnail-two" aria-hidden="true"></span>
-            <span class="project-card__text">
-              <span class="project-card__title">Procedural Archive</span>
-              <span class="project-card__description">A code-generated visual archive that translates research fragments into dynamic compositional systems.</span>
-            </span>
-            <span class="project-card__year">2025</span>
+        <article class="work-item section-reveal" data-category="research">
+          <a class="thumbnail-link" href="projects/procedural-archive.html" aria-label="Open Procedural Archive project">
+            <span class="thumbnail thumbnail-two" aria-hidden="true"></span>
           </a>
-        </li>
+          <h2>Procedural Archive</h2>
+          <p class="subtitle">A code-generated visual archive built from research fragments.</p>
+        </article>
 
-        <li class="project-item section-reveal">
-          <a class="project-card" href="projects/sensorial-map.html">
-            <span class="project-card__number">03</span>
-            <span class="project-card__thumbnail thumbnail-three" aria-hidden="true"></span>
-            <span class="project-card__text">
-              <span class="project-card__title">Sensorial Map</span>
-              <span class="project-card__description">An interactive mapping experiment connecting urban movement, environmental data, and embodied perception.</span>
-            </span>
-            <span class="project-card__year">2025</span>
+        <article class="work-item section-reveal" data-category="art">
+          <a class="thumbnail-link" href="projects/sensorial-map.html" aria-label="Open Sensorial Map project">
+            <span class="thumbnail thumbnail-three" aria-hidden="true"></span>
           </a>
-        </li>
-      </ol>
+          <h2>Sensorial Map</h2>
+          <p class="subtitle">An interactive map connecting movement, data, and perception.</p>
+        </article>
+
+        <article class="work-item section-reveal" data-category="research">
+          <a class="thumbnail-link" href="projects/urban-toolkit.html" aria-label="Open Urban Toolkit project">
+            <span class="thumbnail thumbnail-four" aria-hidden="true"></span>
+          </a>
+          <h2>Urban Toolkit</h2>
+          <p class="subtitle">Placeholder for a spatial research and interface project.</p>
+        </article>
+
+        <article class="work-item section-reveal" data-category="design">
+          <a class="thumbnail-link" href="projects/material-simulation.html" aria-label="Open Material Simulation project">
+            <span class="thumbnail thumbnail-five" aria-hidden="true"></span>
+          </a>
+          <h2>Material Simulation</h2>
+          <p class="subtitle">Placeholder for a computational form and material study.</p>
+        </article>
+
+        <article class="work-item section-reveal" data-category="art">
+          <a class="thumbnail-link" href="projects/exhibition-system.html" aria-label="Open Exhibition System project">
+            <span class="thumbnail thumbnail-six" aria-hidden="true"></span>
+          </a>
+          <h2>Exhibition System</h2>
+          <p class="subtitle">Placeholder for an installation or display system.</p>
+        </article>
+
+        <article class="work-item section-reveal" data-category="design">
+          <a class="thumbnail-link" href="projects/interactive-model.html" aria-label="Open Interactive Model project">
+            <span class="thumbnail thumbnail-seven" aria-hidden="true"></span>
+          </a>
+          <h2>Interactive Model</h2>
+          <p class="subtitle">Placeholder for a prototype using interaction and spatial logic.</p>
+        </article>
+
+        <article class="work-item section-reveal" data-category="research">
+          <a class="thumbnail-link" href="projects/data-landscape.html" aria-label="Open Data Landscape project">
+            <span class="thumbnail thumbnail-eight" aria-hidden="true"></span>
+          </a>
+          <h2>Data Landscape</h2>
+          <p class="subtitle">Placeholder for a visual system shaped by data inputs.</p>
+        </article>
+
+        <article class="work-item section-reveal" data-category="design">
+          <a class="thumbnail-link" href="projects/living-street.html" aria-label="Open Living Street project">
+            <span class="thumbnail thumbnail-nine" aria-hidden="true"></span>
+          </a>
+          <h2>Living Street</h2>
+          <p class="subtitle">Placeholder for an architecture thesis or spatial narrative.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section-reveal" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <div class="about-box">
+        <!-- EDIT ABOUT TEXT HERE: replace this placeholder with your real biography. -->
+        <p>
+          Yino Liu is a designer transitioning from architecture into computational and interactive design. Her background includes architectural education, digital modeling, visualization, fabrication, and design research, with experience working across studio, office, and academic contexts. She is interested in how spatial ideas can be tested through drawings, interfaces, simulations, installation systems, and code-based tools. Her education in architecture shaped a careful approach to proportion, material, structure, and representation, while recent projects explore data, interaction, and visual systems as ways to make complex environments more legible. This placeholder can later include specific schools, firms, courses, software skills, exhibitions, collaborations, thesis work, and the kind of design practice she wants to build next.
+        </p>
+      </div>
     </section>
   </main>
 
   <script src="js/main.js"></script>
 </body>
 </html>
-
